@@ -1,1 +1,7 @@
 #!/usr/bin/env bash
+echo "Active Internet connections (only servers)"
+ss -ltunp | awk 'NR==1 || $1 ~ /^(tcp|udp)/'
+
+echo
+echo "Active UNIX domain sockets (only servers)"
+ss -lxunp | awk 'NR==1 || $1 ~ /^(unix)/'
