@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
 # Ensure script is run with sudo
 if [ "$EUID" -ne 0 ]; then
