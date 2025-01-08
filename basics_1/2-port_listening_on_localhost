@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Ensure script is run with sudo
+if [ "$EUID" -ne 0 ]; then
+  echo "Please run as root or with sudo"
+  exit 1
+fi
+
+# Start listening on port 98 on localhost
+echo "Listening on port 98 on localhost..."
+nc -l 98
+.369+
