@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Configure Ubuntu server to set custom DNS resolutions for localhost and facebook.com
 
 cp /etc/hosts ~/hosts.new
