@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-"this script displays TCP, UDP and PID with all programm it's associated"
-ss -tulnp
+#script displays TCP, UDP and PID with all programm it's associate
+
+netstat -l --program
