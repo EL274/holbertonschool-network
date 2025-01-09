@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
+#This script starts a simple server listening on port 98 of localhost.
 
+nc -l -p 98 -s 127.0.0.1
